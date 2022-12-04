@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>programa de loteria</title>
+</head>
+<body>
+    <section class="header01">
+        <div class="intro">
+            <h2>Gere números de jogo a partir de palavras</h2>
+            <p class="start">
+                Com base na <b>numerologia</b> e na <b>matemática</b>, 
+                este site possibilita a geração <b>não aleatória</b>
+                de números de jogo de loteria a partir de palavras.
+                Você pode usar palavras que você acha que te traz sorte
+                como, por exemplo, seu local de nascimento, sua cor
+                preferida ou algo que você sonhou.
+            </p>
+        </div>
+    </section>
+
+    <section class="principal">
+        <div class="max-width">
+            <div class="content">
+                <div class="column left">
+                    <div class="text">
+                        Escolha um jogo e digite qualquer palavra ou número
+                        de 17 caracteres no máximo para gerar um número de jogo
+                    </div>
+                    <div class="menu-general">
+                        <div class="header">
+                            <ul class="menu" id="menu-site">
+                                <a href="index.html" class="active">MEGA-SENA</a>
+                                <a href="contato.html">MILIONÁRIA</a>
+                                <a href="index.html">DIA DE SORTE</a>
+                            </ul>
+                        </div><br>
+                        <div class="header">
+                            <ul class="menu" id="menu-site">
+                                <a href="sobre.html">TIMEMANIA</a>
+                                <a href="contato.html">DUPLA SENA</a>
+                                <a href="index.html">QUINA</a>
+                            </ul>
+                        </div><br>
+                    </div>
+                    <div class="title">
+                        Digite uma palavra ou algum número
+                    </div>
+                    <form action="">
+                        <div class="field textarea">
+                            <input type="text" name="word" placeholder="Digite uma palavra ou um número" maxlength="17">
+                        </div>
+                        <div class="buttom-area">
+                            <button class="fa-solid fa-square-caret-right" type="submit" name="msgSendo"> Calcular</button>
+                        </div>
+                    </form>
+                    <div class="title">
+                        Resultado
+                    </div>
+                    <div class="field result">
+                        <input type="text" name="" readonly>
+                    </div>
+<!--------------------------------------Dia da sua sorte----------------------------------------------------->
+                    <div class="lockday">
+                        <div class="dayTitle">
+                            <b>Descubra o dia em que a chance de você ganhar é
+                                maior, usando sua data de nascimento.</b>
+                        </div>
+                        <div class="day"><a href="/" class="fa-solid fa-square-caret-right"> Meu dia de sorte</a></div>
+                    </div>
+                    <!--<div class="lotoResult">
+                        <h1>Confira o resultado do último concurso!</h1>
+                        <h3 class="concurso">
+                            Jogo: <span>Mega-Sena</span>
+                            Concurso: <span>1234</span>
+                        </h3>
+                        <h5 class="concurso">
+                            Data de apuração: <span>10/10/2010</span>
+                            Resultado: <span>Acumulado</span>
+                        </h5>
+                        <h3>Dezenas sorteadas:</h3>
+                        <div>
+                            <span class="dezena">10</span>
+                            <span class="dezena">20</span>
+                            <span class="dezena">30</span>
+                            <span class="dezena">40</span>
+                            <span class="dezena">50</span>
+                            <span class="dezena">60</span>
+                        </div>
+                    </div>-->
+                </div>
+
+                <div class="column right">
+                    <div class="donation">
+                        <div class="donationTitle">
+                            <p><i class="fa-solid fa-hand-holding-dollar"></i> 
+                            <b>Apoie nosso trabalho, fazendo uma doação!</b>  
+                            <i class="fa-solid fa-hand-holding-dollar"></i></p>
+                        </div>
+                        <div class="donationBank"><b>Transferência bancária</b></div>
+                        <div class="donationInput">
+                            <label for="">Agência: </label>
+                            <input type="text" name="agence" class="agence" value="2447-3" readonly>
+                            <button type="button" class="copy">copiar</button>
+                        </div>
+                        <div class="donationInput">
+                            <label for="">Conta: </label>
+                            <input type="text" name="texto01" id="texto01" value=" 45.130-4" readonly/>
+                            <button onclick="copiarTexto01()">copiar</button>
+                        </div>
+                        <div class="donationPix">
+                            </i><b>Doação por pix</b> <i class="fa-brands fa-pix"></i>
+                        </div>
+                        <div class="donationInput">
+                            <label for="">Código Pix: </label>
+                            <input type="text" name="texto" id="texto" value=" 235.003.308-27" readonly/>
+                            <button onclick="copiarTexto()">copiar</button>
+                        </div>
+                    </div>
+                    <div class="numerology">
+                        <h3>Saiba sobre a numerologia</h3>
+                        <p>
+                            Numerologia é um ramo do esoterismo que recorre à 
+                            simbologia dos números e a operações matemáticas 
+                            com o intuito de estabelecer uma relação oculta 
+                            entre números, seres vivos e forças físicas, 
+                            paranormais ou mesmo divinatórias de forma a 
+                            predizer as características da personalidade e 
+                            mesmo o destino dessa mesma pessoa. Além disso, 
+                            numerologia é também o estudo do valor numérico 
+                            das letras em palavras, nomes e ideias. Assim, cada
+                            letra do alfabeto está associada a um número, conforme 
+                            a seguinte tabela.  
+                            <a href="https://excerpts.numilog.com/books/9782904616822.pdf">Saíba mais!</a>
+                        </p>
+                        <table class="numerologyTable">
+                            <tr class="tableHead">
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>a</td>
+                                <td>b</td>
+                                <td>c</td>
+                                <td>d</td>
+                                <td>e</td>
+                                <td>f</td>
+                                <td>g</td>
+                                <td>h</td>
+                                <td>i</td>
+                            </tr>
+                            <tr>
+                                <td>j</td>
+                                <td>k</td>
+                                <td>l</td>
+                                <td>m</td>
+                                <td>n</td>
+                                <td>o</td>
+                                <td>p</td>
+                                <td>q</td>
+                                <td>r</td>
+                            </tr>
+                            <tr>
+                                <td>s</td>
+                                <td>t</td>
+                                <td>u</td>
+                                <td>v</td>
+                                <td>w</td>
+                                <td>x</td>
+                                <td>y</td>
+                                <td>z</td>
+                            </tr>
+                        </table>
+                        <div class="exemple">
+                           <b>Por exemplo:</b> Campinas = 31479511;
+                            Azul = 1833; Computador = 3647321469
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <p>Se você dúvida ou sugestões, por favor, entre em contato com a gente</p>
+                        <div class="contactBtn"><a href="/" class="fa-solid fa-square-caret-right"> Entre em contato agora</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Created By <a href="">Eclair Tec</a></span>
+    </footer>
+</body>
+</html>
