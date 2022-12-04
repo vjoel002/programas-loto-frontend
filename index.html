@@ -188,8 +188,8 @@
                         </div>
                     </div>
                     <div class="contact">
-                        <p>Se você dúvida ou sugestões, por favor, entre em contato com a gente</p>
-                        <div class="contactBtn"><a href="/" class="fa-solid fa-square-caret-right"> Entre em contato agora</a></div>
+                        <p>Se você tem dúvida ou sugestões, por favor, entre em contato com a gente</p>
+                        <div class="contactBtn"><a href="contato.html" class="fa-solid fa-square-caret-right"> Entre em contato agora</a></div>
                     </div>
                 </div>
             </div>
@@ -198,6 +198,32 @@
 
     <footer>
         <span>Created By <a href="">Eclair Tec</a></span>
+        <div class="adm"><a href="loguin.html">Administration</a></div>
     </footer>
+
+    <script>
+        const btnCopiar01 = document.querySelector('.copy');
+        const inputAgence = document.querySelector('.agence');
+        btnCopiar01.addEventListener('click', (e) => {
+        navigator.clipboard.writeText(inputAgence.value);
+        alert('2447-3 copiado com sucesso! Faça CTRL+V em algum lugar para color.');
+        });
+
+        function copiarTexto01() {
+        let textoCopiado = document.getElementById("texto01");
+        textoCopiado.select();
+        textoCopiado.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        alert("45.130-4 copiada com sucesso! Faça CTRL+V em algum lugar para color.");
+    }
+
+        function copiarTexto() {
+        let textoCopiado = document.getElementById("texto");
+        textoCopiado.select();
+        textoCopiado.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        alert("235.003.308-27 copiada com sucesso! Faça CTRL+V em algum lugar para color.");
+    }
+    </script>
 </body>
 </html>
