@@ -102,7 +102,14 @@ body{
 .principal .left .lotoResult{
     width: 100%;
 }
-.principal .left form .field input,
+.principal .left form .field input{
+    height: 70%;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+}
 .principal .left .field input{
     height: 70%;
     width: 100%;
@@ -118,7 +125,8 @@ body{
     display: flex;
     align-items: center;
 }
-.left form .buttom-area button{
+.left form .buttom-area button,
+.left form .buttom-area-lookday button{
     background-color: blue;
     color: white;
     display: block;
@@ -133,18 +141,37 @@ body{
     border: 1px solid blue;
     transition: all 0.3s ease;
 }
-.left form .buttom-area button:hover{
+.left form .buttom-area button:hover,
+.left form .buttom-area-lookday button:hover{
     color: blue;
     background: none;
 }
 
-/*----------------------- Dia da sua sorte --------------------------*/
-/*.principal .left{
-    border: 1px solid black;
-    height: auto;
-    background-color: aqua;
-    margin-bottom: 10px;
-}*/
+/*///////////////////////////////// Dia da sua sorte \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.principal .left form .field-lookday input{
+    height: 70%;
+    width: 30%;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+}
+.principal .left form .field-lookday,
+.principal .left form .buttom-area-lookday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principal .left .field textarea{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+}
+
+/*----------------------- Dia da sua sorte botão --------------------------*/
 .principal .left .lockday{
     height: auto;
     width: 100%;
@@ -526,6 +553,11 @@ footer .adm{
     }
     .resultadoAffiche .verresultadosSmall a:hover{
         color: #04fcfc;
+    }
+
+    /*/////////////////////////////////// Meu dia de sorte \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+    .principal .left .result{
+        margin-bottom: 15px;
     }
     
 }

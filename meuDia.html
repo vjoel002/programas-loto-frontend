@@ -11,7 +11,7 @@
 <body>
     <section class="header01">
         <div class="intro">
-            <h2>Gere números de loteria a partir de palavras</h2>
+            <h2>Gere números de jogo a partir de palavras</h2>
             <p class="start">
                 Com base na <b>numerologia</b> e na <b>matemática</b>, 
                 este site possibilita a geração <b>não aleatória</b>
@@ -26,35 +26,27 @@
     <section class="principal">
         <div class="max-width">
             <div class="content">
+<!--///////////////////////////////////////////////// LEFT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
                 <div class="column left">
                     <div class="text">
-                        Escolha um jogo e digite qualquer palavra ou número
-                        de 17 caracteres no máximo para gerar um número de jogo
-                    </div>
-                    <div class="menu-general">
-                        <div class="header">
-                            <ul class="menu" id="menu-site">
-                                <a href="index.html" class="active">MEGA-SENA</a>
-                                <a href="contato.html">MILIONÁRIA</a>
-                                <a href="index.html">DIA DE SORTE</a>
-                            </ul>
-                        </div><br>
-                        <div class="header">
-                            <ul class="menu" id="menu-site">
-                                <a href="sobre.html">TIMEMANIA</a>
-                                <a href="contato.html">DUPLA SENA</a>
-                                <a href="index.html">QUINA</a>
-                            </ul>
-                        </div><br>
+                        Para descobrir seu dia de sorte em que você tem a 
+                        maior chance de ganhar na loteria se você aposta,
+                        entre o dia e o horário de nascimento.
                     </div>
                     <div class="title">
-                        Digite uma palavra ou algum número
+                        Insira sua data de nascimento
                     </div>
                     <form action="">
-                        <div class="field textarea">
-                            <input type="text" name="word" placeholder="Digite uma palavra ou um número" maxlength="17">
+                        <div class="field-lookday textarea">
+                            <input type="date" name="birthday">
                         </div>
-                        <div class="buttom-area">
+                        <div class="title">
+                            Insira seu horário de nascimento
+                        </div>
+                        <div class="field-lookday textarea">
+                            <input type="time" name="birthday">
+                        </div>
+                        <div class="buttom-area-lookday">
                             <button class="fa-solid fa-square-caret-right" type="submit" name="msgSendo"> Calcular</button>
                         </div>
                     </form>
@@ -62,18 +54,10 @@
                         Resultado
                     </div>
                     <div class="field result">
-                        <input type="text" name="" readonly>
-                    </div>
-<!--------------------------------------Dia da sua sorte----------------------------------------------------->
-                    <div class="lockday">
-                        <div class="dayTitle">
-                            <b>Descubra o dia em que a chance de você ganhar é
-                                maior, usando sua data de nascimento.</b>
-                        </div>
-                        <div class="day"><a href="meuDia.html" class="fa-solid fa-square-caret-right"> Meu dia de sorte</a></div>
+                        <textarea name="" id="" cols="30" rows="10" readonly></textarea>
                     </div>
                 </div>
-
+<!--/////////////////////////////////////////////// RIGHT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
                 <div class="column right">
                     <div class="donation">
                         <div class="donationTitle">
@@ -176,7 +160,7 @@
         </div>
     </section>
     <section class="resultadoAffiche">
-        <div class="titre">Confira os resultados dos concursos anteriores</div>
+        <div class="titre">Confira os resultados dos jogos anteriores</div>
         <div class="verresultados">
             <a href="https://loterias.caixa.gov.br/Paginas/Mega-Sena.aspx">Mega-sena</a>
             <a href="https://loterias.caixa.gov.br/Paginas/Quina.aspx">Quina</a>
@@ -229,4 +213,3 @@
     </script>
 </body>
 </html>
-
