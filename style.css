@@ -243,13 +243,44 @@ body{
 }
 .principal .right .contact p{
     font-weight: bold;
+    padding: 15px;
 }
 .principal .right .contactBtn a{
     background-color: #fff;
     padding: 10px;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: 15px;
     margin-bottom: 15px;
+}
+
+/*/////////////////////////////////////// Resultado /////////////////////////////////////////*/
+
+.resultadoAffiche{
+    background: green;
+    height: auto;
+    width: 100vw;
+}
+.resultadoAffiche .titre{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+    color: #fff;
+}
+.resultadoAffiche .verresultados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultadoAffiche .verresultados a{
+    margin: 15px;
+    color: #fff;
+}
+.resultadoAffiche .verresultados a:hover{
+    color: #04fcfc;
+}
+.resultadoAffiche .verresultadosSmall a{
+    display: none;
 }
 
 /*//////////////////////////////////////// Footer \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -442,10 +473,59 @@ footer .adm{
 
 /*//////////////////////////////////////// Telas pequenas \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 @media (max-width: 947px){
+    body{
+        background-color: rgb(0, 255, 115);
+    }
     .principal .max-width .content{
         display: block;
     }
     .principal .content .column{
         width: 100%;
     }
+    /*-------------------- LEFT -------------------*/
+    .principal .left .text{
+        margin-top: 10px;
+    }
+    .principal .left .header .menu a{
+        font-size: 13.5px;
+    }
+    .principal .title{
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    /*////////////////////////////////////// Contato \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+    .contact{
+        height: 680px;
+    }
+
+    /*////////////////////////////////////// Resultado \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+    .resultadoAffiche{
+        background: rgb(0, 255, 115);
+    }
+    .resultadoAffiche .verresultados{
+        display: none;
+    }
+    .resultadoAffiche .titre{
+        font-size: 17px;
+        color: green;
+    }
+    
+    .resultadoAffiche .verresultadosSmall{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .resultadoAffiche .verresultadosSmall a{
+        margin: 5px;
+        color: #fff;
+        display: block;
+        font-size: 15px;
+        background: green;
+        padding: 5px;
+    }
+    .resultadoAffiche .verresultadosSmall a:hover{
+        color: #04fcfc;
+    }
+    
 }
